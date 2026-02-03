@@ -55,18 +55,31 @@ Folder Structure
 DataAnalysisAgent/
 │
 ├─ app.py                  # Streamlit entry point
+
 ├─ graph.py                # Defines the agent nodes and graph workflow
+
 ├─ dataloader.py           # Loads CSV or Excel datasets
+
 ├─ plan_compiler.py        # Handles multi-step JSON analysis execution
+
 ├─ chart_agent.py          # Generates visualizations
+
 ├─ executor.py             # Executes Pandas code safely
+
 ├─ explainer.py            # Converts results into human-readable explanations
+
 ├─ planner.py              # Generates analysis plans (JSON) from user questions
+
 ├─ profiler.py             # Profiles dataset and summarizes structure
+
 ├─ repair_agent.py         # Repairs LLM-generated Pandas code
+
 ├─ router.py               # Determines intent of the user question
+
 ├─ synthesizer.py          # Synthesizes results into explanations
+
 ├─ requirements.txt        # Python dependencies
+
 └─ .env                    # Stores GROQ_API_KEY and other secrets
 
 Usage Instructions
@@ -134,5 +147,6 @@ Future Enhancements
     Integrate more visualization options like Seaborn or Plotly.
 
     Allow interactive filtering and charting within Streamlit.
+
 
     Add history tracking for multiple user queries.
